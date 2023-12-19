@@ -1,0 +1,1 @@
+This is a project on Todo-List, it helps us add new tasks aswell as remove finished tasks.

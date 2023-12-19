@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(43, 57, 43);
+    font-family:Arial, Helvetica, sans-serif;
+}
+.container {
+    margin: 30px auto;
+    width: 500px;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 15px 10px 15px 50px;
+    background-color: rgb(20, 220, 203);
+    font-size: 16px;
+    transition: 0.5s;
+    margin-bottom: 5px;
+    text-align: justify;
+    list-style-type: none;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+ul li:nth-child(even) {
+    color: whitesmoke;
+}
+
+
+ul li:nth-child(odd) {
+    background-color: whitesmoke;
+}
+li:hover{
+    background: gray;
+    color: wheat;
+    font-size: larger;
+    font-style: italic;
+}
+
+
+
+ul li.checked {
+    background: rgb(252, 187, 200);
+    color: #000000;
+}
+
+ul li.checked::before {
+    content: "";
+    position: absolute;
+    border: solid rgb(178, 254, 169);
+    border-width: 0 3px 3px 0;
+    top: 15px;
+    left: 20px;
+    transform: rotate(50deg);
+    height: 20px;
+    width: 10px;
+    
+    
+}
+
+.removeBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 15px 12px 15px;
+    margin: 0 5px 5px 0;
+    border: 1px solid rgb(220, 20, 60);
+}
+
+.removeBtn:hover {
+    background-color: rgb(249, 132, 155);
+    color: #000000;
+}
+
+.toDoHeader {
+    padding: 40px 50px;
+    color: whitesmoke;
+    text-align: center;
+    
+}
+.addInputBtn:hover{
+    font-size: larger;
+    font-style: oblique;
+    border-radius: 16px;
+    box-shadow: 50px;
+    padding: 10px;
+    background-color: aquamarine;
+
+}
+
+.toDoHeader:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 80%;
+    padding: 15px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.addInputBtn {
+    padding: 15px;
+    width: 20%;
+    background-color: rgb(252, 187, 200);
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 0;
+    background-color: crimson;
+    margin: 5px;
+}
+.diKind>p {
+    display: none;
+}
+.addInputBtn:hover .kindly{
+    display: block;
+    background-color: blueviolet;
+} 
+
+
+
+@media (max-width:480px) {
+    .toDoHeader {
+        width: 100%;
+        
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    .input {
+        width: 80%;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    span {
+        width: 20%;
+        font-size: 12px;
+    }
+
+    ul li {
+        width: 90%;
+        height: 40px;
+        font-size: 12px;
+        text-align: justify;
+        list-style-type: none;
+        margin-left: 20px;
+
+    }
+
+    .listContainer {
+        width: 100%;
+    }
+
+    .container {
+        margin: 30px auto;
+        width: 380px;
+    }
+    
+    ul li.checked::before {
+        content: "";
+        position: absolute;
+        border: solid crimson;
+        border-width: 0 2px 2px 0;
+        top: 8px;
+        left: 20px;
+        transform: rotate(50deg);
+        height: 20px;
+        width: 10px;
+    }
+    
+
+}
+

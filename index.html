@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="toDoHeader" id="toDoHeader">
+          <h1>My Todo List</h1>
+          <div class="inputContainer">
+            <input type="text" id="userInput" placeholder="My todos..." />
+            <span onclick="addElement()" class="addInputBtn">Add</span>
+          </div>
+          <div class="diKind"><p class="Kindly">Kindly add list.</p></div>
+        </div>
+        <div class="listContainer">
+          <ul id="myList">
+            <li>
+              Pray
+            </li>
+            <li class="checked">
+              Go to bed
+            </li>
+            <li>
+              Wake up
+            </li>
+            <li>
+              Pray
+            </li>
+            <li>
+              Freshen up
+            </li>
+            <li>
+              Study JavaScript
+            </li>
+            <li>
+              Work on my projects
+            </li>
+          </ul>
+        </div>
+      </div>
+      <script src="./index.js"></script>
+  </body>
+</html>
